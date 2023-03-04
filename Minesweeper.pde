@@ -7,7 +7,7 @@ private ArrayList <MSButton> mines; //ArrayList of just the minesweeper buttons 
 
 void setup ()
 {
-    size(1600, 1600);
+    size(800, 800);
     textAlign(CENTER,CENTER);
     // make the manager
     Interactive.make( this );
@@ -93,8 +93,8 @@ public class MSButton
    
     public MSButton ( int row, int col )
     {
-        width = 1600/NUM_COLS;
-        height = 1600/NUM_ROWS;
+        width = 800/NUM_COLS;
+        height = 800/NUM_ROWS;
         myRow = row;
         myCol = col;
         x = myCol*width;
@@ -108,11 +108,6 @@ public class MSButton
     public void mousePressed ()
     {
       clicked = true;
-      //int firstclick = 1;
-      //if (firstclick == 1) {
-      //  firstrow = myRow;
-      //  firstcol = myCol;
-      //firstclick += 1;}
         if (mouseButton == RIGHT) {
           flagged = !flagged;
           if (flagged == false)
