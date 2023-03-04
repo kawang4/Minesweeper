@@ -137,7 +137,7 @@ public class MSButton
       buttons[i][j].setLabel("YOU LOST");}}
    for (int i = 0; i < mines.size(); i++) {
              mines.get(i).clicked = true;}
-            noLoop();
+            //noLoop();
 
 }
 public void displayWinningMessage()
